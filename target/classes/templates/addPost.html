@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini blog - dodawanie postu</title>
+</head>
+<body>
+
+<h1>Dodaj nowy post</h1>
+<form th:action="@{/addPost}" method="post">
+
+    <input type="text" th:name="title" placeholder="Tytuł...">
+    <br>
+
+    <textarea th:type="text" th:name="content" placeholder="Treść postu...">
+
+    </textarea>
+    <br>
+
+    <input th:type="submit" value="Dodaj post">
+
+
+</form>
+
+</body>
+</html>

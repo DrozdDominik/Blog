@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini blog</title>
+</head>
+<body>
+
+<form th:action="@{/search}" method="GET" th:fragment="searchForm">
+    <!--<input th:type="text" name="searchPhrase" placeholder="Wpisz szukana fraze..." th:value="${#request.getParameter('searchPhrase')}">-->
+    <input th:type="text" name="searchPhrase" placeholder="Wpisz szukana fraze..." th:value="${searchPhrase}">
+    <input type="submit" value="Wyszukaj">
+
+</form>
+
+</body>
+</html>
